@@ -7,11 +7,37 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/navbar-fixed/">
 
-    <style>
-		body {
-		  min-height: 75rem;
-		  padding-top: 4.5rem;
+	<style>	
+		div.box{
+			margin: 0px;
+			background-color: gray;
+			border: 1px solid black;
+				
 		}
+		
+		div.box h1 {
+			margin: 2%;
+			font-weight: bold;
+		}
+		
+		div.column {
+			float: left;
+			width: 25%;
+			padding: 0 10px;
+		}
+		
+		div.row {
+			margin: 0 -5px;
+		}
+		
+		div.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			padding: 16px;
+			text-align: center;
+			background-color: #f1f1f1;
+			}
+			
+	
 	</style>
 
     <!-- Bootstrap core CSS -->
@@ -40,30 +66,214 @@
     <!-- Custom styles for this template -->
     <link href="navbar-top-fixed.css" rel="stylesheet">
   </head>
-  <body>
-    
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <img class="navbar-brand" src="technotrend.png" style="height: 3.5em;" href="#"></img>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+		<img class="navbar-brand" src="images/technotrend.png" style="height: 3.5em;" href="#"></img>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			  Products
+			</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<li><a class="dropdown-item" href="Featured.html">Featured Products</a></li>
+				<li><a class="dropdown-item" href="products_categories1.html">Computers</a></li>
+				<li><a class="dropdown-item" href="products_categories2.html">Printers</a></li>
+				<li><a class="dropdown-item" href="#">Accessories</a></li>
+			</ul>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Testimonials</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="about_us.html">About Us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="contact_us.html">Contact Us</a>
+		  </li>
+		</ul>
+	  </div>
+	</div>
 </nav>
 
-<main role="main" class="container">
-  <div class="jumbotron">
-    <h1>Sample Text</h1>
-    <p class="lead">Sample text</p>
-  </div>
-</main>
-      
-  </body>
+<div class="container">
+	<div class="jumbotron">
+	<img src="reseller.jpg" alt="techno" style="width:170px;height:170px; margin-right: 15px; float: left;">
+		<h1>Authorized Reseller</h1>
+		<p>Hewlett Packard, IBM, Dell, ACer, Asustek, MSI, Intel, AMD, Lenovo, Microsoft, Epson, Apacer, Kingston, 
+		Seagate, Samsung, Lite-On, Mag, Viewsonic, LG, AOC, Logitech, Sony, D-Link, Linksys, Cisco, 3com, 
+		Canon, APC, Imation, Neo, Pioneer, Buffalo, et al.</p>
+	</div>	
+</div>
+<div class="container">
+	<div class="jumbotron">
+	<img src="product.jpg" alt="techno" style="width:170px;height:170px; margin-right: 15px; float: left;">
+		<h1>Products</h1>
+		<p>Servers; Desktops; Laptops; Notebooks; PC Components; Storage Devices; 
+		Peripherals; Networking Device; Softwares; Gadgets; Printers; Monitors; Scanners; 
+		Video Cards; Memory; Hardisks-Internal and External, Consumables-Inks, Toners, Ribbons; 
+		Accessories.</p>
+	</div>
+</div>	
+<div class="container">
+	<div class="jumbotron">
+	<img src="icon.jpg" alt="techno" style="width:170px;height:170px; margin-right: 15px; float: left;">
+		<h1>Information</h1>
+		<p>TECHNOTREND Computer Solution Co. endeavors to be an innovative technology- based 
+		company that supports results-oriented clients’ demands and needs in order to establish 
+		strong supplier-customer relationship as a provider of trendy technology.</p>	
+	</div>
+</div>
+
+
+
+<div class="box">
+	<h1>Available products</h1>
+</div>
+
+<div class="row">
+	<div class="column">
+		<div class="card" style="width: 18rem;">
+			<img src="PR1.jpg" class="card-img-top" alt="laptop">
+			<div class="card-body">
+			<h5 class="card-title">HP 14S-CF3081TU Natural Silver Notebook</h5>
+			<p class="card-text">26/02/2021</p>
+			<p>Affordable laptops with essential business features available now!!!!
+			Powerful. Fast. Software-certified</p>
+			<p>Intel Core i5-1035G1 @ 1.00GHz
+			8GB Memory DDR4
+			512GB PCIe NVMe SSD
+			14" BrightView Micro-Edge
+			Intel(R) UHD Graphics
+			3-cell, 41W/HR Li-Ion Battery
+			Windows 10 Home 64-bit English
+			with Microsoft Office Home & Student 2019 Pre Installed
+			Carrying Case
+			2 Years Warranty</p>
+		</div>
+	</div>
+	</div>
+
+	<div class="column">
+		<div class="card" style="width: 18rem;">
+			<img src="PR2.jpg" class="card-img-top" alt="laptop">
+			<div class="card-body">
+			<h5 class="card-title">HP 14s-CF2500TU (Natural Silver) Notebook</h5>
+			<p class="card-text">24/02/2021</p>
+			<p>Affordable laptops with essential business features available now!!!!
+			Powerful. Fast. Software-certified</p>
+			<p>Intel Core i3-10110U 2.1GHz, up to 4.1 GHz
+			4GB DDR4
+			1TB 5400RPM SATA HDD + 128GB SSD
+			14" HD 1366x 768 resolution
+			Intel UHD Graphics
+			Windows 10 Home w/ Backpack</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="column">	
+		<div class="card" style="width: 18rem;">
+			<img src="PR3.jpg" class="card-img-top" alt="laptop">
+			<div class="card-body">
+			<h5 class="card-title">HP Laptop Natural Silver (14S-FQ0018AU)</h5>
+			<p class="card-text">18/02/2021</p>
+			<p>Affordable laptops with essential business features available now!!!!
+			Powerful. Fast. Software-certified</p>
+			<p>AMD Ryzen(TM) 5-4500 @ 2.30GHz
+			8GB Memory DDR4
+			512GB PCIe NVMe SSD
+			14" HD, BrightView Micro-Edge
+			AMD Radeon(TM) Graphics
+			3-cell, 41W/HR Li-Ion Battery
+			Windows 10 Home 64-bit English with Microsoft Office Home & Student Pre Installed
+			Carrying Case
+			2 Years Warranty</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="column">	
+		<div class="card" style="width: 18rem;">
+			<img src="PR4.jpg" class="card-img-top" alt="laptop">
+			<div class="card-body">
+			<h5 class="card-title">Acer Aspire 5 A514-53-39QP Laptop</h5>
+			<p class="card-text">17/02/2021</p>
+			<p>AVAILABLE NOW!!!!</p>
+			<p> Processor: Intel Core i3-1005G1u
+			Graphics: Intel® UHD Graphics 
+			Optical Drive: N/A
+			Operating System: Windows 10 Home
+			Display: 14" HD TFT LCD Display
+			Memory: 4GB DDR4
+			Storage: 1TB HDD + 128GB SSD
+			Battery: 3-cell Lithium Ion (Li-Ion)
+			Bundled with Bag
+			2 Year Manufacturer's Warranty</p>
+			</div>
+		</div>
+	</div>
+</div>
+<br />
+<div class="container">
+	<div class="jumbotron">
+		<h1>Available for now</h1>
+		<p>Perfect for gift giving!</p>
+		<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ftechnotrendcomputer%2Fvideos%2F1128642230885287%2F&show_text=false&width=560"
+		width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+		allowFullScreen="true"></iframe>
+	</div>	
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<footer class="bg-light text-center text-lg-start">
+	<div class="container p-4">
+	  <div class="row">
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		  <h5 class="text-uppercase"><a href="index.html">Home</a></h5>
+		</div>
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		  <h5 class="text-uppercase mb-0">Products</h5>
+  
+		  <ul class="list-unstyled">
+			<li>
+			  <a href="Featured.html" class="text-dark">Featured Products</a>
+			</li>
+			<li>
+			  <a href="products_categories1.html" class="text-dark">Computers</a>
+			</li>
+			<li>
+			  <a href="products_categories2.html" class="text-dark">Printers</a>
+			</li>
+			<li>
+			  <a href="#!" class="text-dark">Accessories</a>
+			</li>
+		  </ul>
+		</div>
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		  <h5 class="text-uppercase">Testimonials</h5>
+		</div>
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+			<h5 class="text-uppercase"><a href="about_us.html">About Us</a></h5>
+		</div>
+		<div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+		  <h5 class="text-uppercase"><a href="contact_us.html">Contact Us</a></h5>
+		</div>
+	  </div>
+	</div>
+  
+
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+	  Developed by: James Chua, Karl Christian Espina, John Angelo Matel, Dhan Quijano
+	</div>
+
+</footer>
+</body>
 </html>
