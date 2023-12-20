@@ -1,0 +1,28 @@
+div.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+div.centered {
+	text-align: center;
+}
+
+div.grid-child {
+	background-color: #eee;
+	font: 1.5em 'Arial';
+	padding: 20px;
+	text-align: center;
+	font-size: 26px;
+}
+
+div.grid-child form span {
+	font-size: 18px;
+	display: block;
+}
+
+form#EmergencyDetails textarea, form#EmployeeDetails textarea {
+	width: 210px;
+	height: 100px;
+	resize: none;
+}
